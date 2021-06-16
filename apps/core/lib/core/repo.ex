@@ -1,5 +1,5 @@
 defmodule Core.Repo do
-  use Ecto.Repo, otp_app: :core
+  use Ecto.Repo, otp_app: :core, adapter: Ecto.Adapters.Postgres
 
   @type select_result_t(t) :: {:ok, t} | {:error, :not_found}
   @type modify_result_t(t) :: {:ok, t} | {:error, Ecto.Changeset.t()}

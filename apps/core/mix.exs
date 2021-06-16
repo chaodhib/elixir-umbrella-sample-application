@@ -27,9 +27,9 @@ defmodule Core.MixProject do
     [
       {:bcrypt_elixir, "~> 0.12"},
       {:comeonin, "~> 4.0"},
-      {:ecto, "~> 2.2"},
+      {:ecto_sql, "~> 3.0"},
       {:poison, "~> 3.0"},
-      {:postgrex, "~> 0.13"}
+      {:postgrex, "~> 0.15.9", override: true}
     ]
   end
 
